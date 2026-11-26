@@ -3,8 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FiMenu } from "react-icons/fi";
+import { authClient } from "@/lib/auth-client";
 import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
+import UserMenu from "./UserMenu";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -15,6 +17,8 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { data: session, isPending } = authClient.useSession();
+  const user = session?.user;
 
   const isActive = (href) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
 
@@ -60,12 +64,20 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <Link href="/login" className="btn btn-ghost btn-sm">
-            Login
-          </Link>
-          <Link href="/register" className="btn btn-primary btn-sm">
-            Register
-          </Link>
+          {isPending ? (
+            <div className="skeleton h-9 w-9 rounded-full" />
+          ) : user ? (
+            <UserMenu user={user} />
+          ) : (
+            <>
+              <Link href="/login" className="btn btn-ghost btn-sm">
+                Login
+              </Link>
+              <Link href="/register" className="btn btn-primary btn-sm">
+                Register
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </header>
