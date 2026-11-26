@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ToasterProvider from "@/components/ToasterProvider";
+import AuthTokenSync from "@/components/AuthTokenSync";
 
 const geist = Geist({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className={`${geist.className} flex min-h-screen flex-col bg-base-100 text-base-content`}>
+        <AuthTokenSync />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
