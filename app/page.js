@@ -1,7 +1,17 @@
+import HeroSlider from "@/components/HeroSlider";
+import FeaturedStudios from "@/components/FeaturedStudios";
+import CategorySection from "@/components/CategorySection";
+import BookingSteps from "@/components/BookingSteps";
+import HostGuarantee from "@/components/HostGuarantee";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center">
-      <button className="btn btn-primary">StudioSpace is ready</button>
-    </main>
+    <>
+      <HeroSlider />
+      <FeaturedStudios />
+      <CategorySection />
+      <BookingSteps />
+      <HostGuarantee />
+    </>
   );
 }
