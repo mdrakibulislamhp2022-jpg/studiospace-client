@@ -4,6 +4,7 @@ import { FiMapPin, FiCheck, FiArrowLeft } from "react-icons/fi";
 import { FaStar } from "react-icons/fa6";
 import StudioGallery from "@/components/StudioGallery";
 import BookingCard from "@/components/BookingCard";
+import ReviewForm from "@/components/ReviewForm";
 import { getStudio } from "@/lib/api";
 
 export async function generateMetadata({ params }) {
@@ -103,6 +104,7 @@ export default async function StudioDetailsPage({ params }) {
 
           <div>
             <h2 className="mb-4 text-2xl font-semibold">Reviews</h2>
+            <ReviewForm studioId={String(studio._id)} ownerEmail={studio.ownerEmail} />
             {reviews.length === 0 ? (
               <div className="rounded-box border border-dashed border-base-300 bg-base-200 p-6 text-center">
                 <p className="font-medium">No reviews yet</p>
