@@ -9,19 +9,19 @@ import "swiper/css/navigation";
 
 const slides = [
   {
-    image: "/hero/hero-1.jpg",
+    image: "/hero/hero-1.svg",
     eyebrow: "Photo & Film Studios",
     title: "Book the perfect room for your next shoot",
     text: "Cyc walls, natural light studios and full sound stages, all bookable by the hour with prices you can see up front.",
   },
   {
-    image: "/hero/hero-2.jpg",
+    image: "/hero/hero-2.svg",
     eyebrow: "Podcast Lounges",
     title: "Record your show in a space that sounds great",
     text: "Treated rooms, pro microphones and comfortable seating. Walk in, plug in and press record.",
   },
   {
-    image: "/hero/hero-3.jpg",
+    image: "/hero/hero-3.svg",
     eyebrow: "Music Suites",
     title: "Turn your empty hours into creative income",
     text: "Own a studio or workshop? List it on StudioSpace and let creators in your city book it when you are not using it.",
