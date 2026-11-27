@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 StudioSpace
 
-## Getting Started
+A modern and responsive workspace management platform built with Next.js. StudioSpace provides a secure and user-friendly environment with Google Authentication and personalized dashboard access.
 
-First, run the development server:
+## 🌟 Project Overview
+
+StudioSpace is a web-based application designed to provide users with a smooth authentication experience and a personalized workspace.
+
+## ✨ Features
+
+- 🔐 User Authentication
+- 🔑 Google Login Integration
+- 📝 User Registration
+- 👤 User Profile Management
+- 📊 Personalized Dashboard
+- 🛡️ Protected Routes
+- 📱 Responsive Design
+- ⚡ Fast and Modern UI
+- 🔔 User-Friendly Notifications
+
+## 🛠️ Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Better Auth
+- Google OAuth
+- MongoDB
+
+## 📂 Project Structure
+
+```text
+StudioSpace/
+├── studiospace-client/
+│   ├── app/
+│   ├── components/
+│   ├── lib/
+│   ├── public/
+│   ├── .env.local
+│   └── package.json
+│
+└── README.md
+```
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Navigate to Client Folder
+
+```bash
+cd studiospace-client
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env.local` file and configure the required environment variables.
+
+```env
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+```
+
+Add the other environment variables required by your authentication and database configuration.
+
+### 5. Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🔐 Authentication
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+StudioSpace supports Google OAuth authentication.
 
-## Learn More
+Users can sign in using their Google accounts and access their personalized dashboard.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Frontend: Vercel
+- Backend: Render
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deployment configuration and production environment variables are required before launching.
 
-## Deploy on Vercel
+## 👨‍💻 Developer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Rakibul Islam**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+⭐ If you find this project interesting, feel free to explore and share your feedback.
